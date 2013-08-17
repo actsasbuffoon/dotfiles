@@ -6,3 +6,9 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+(defvar prelude-packages
+  '(ruby-electric ruby-end ruby-block flymake-easy flymake-ruby)
+  "A list of packages to ensure are installed at launch.")
