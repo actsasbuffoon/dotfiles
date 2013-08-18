@@ -10,6 +10,7 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias emacs=emacs-24.3
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -46,3 +47,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+[[ $TERM == eterm-color ]] && export TERM=xterm
